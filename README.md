@@ -1,7 +1,7 @@
 # Paris Yum 三羊开泰 — Site vitrine (une page)
 
 Site web moderne **sur une seule page** pour le restaurant asiatique & chinois **Paris Yum**
-(21 rue Bleue, 75009 Paris). Sans commande en ligne.
+(44 rue de Trévise, 75009 Paris). Sans commande en ligne.
 
 ## Sections (une seule page, navigation par ancres)
 

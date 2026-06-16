@@ -263,11 +263,11 @@ const MENU = [
 ];
 
 const HOURS = [
-  { day: "Lundi",    time: "19h00 – 23h30",             dow: 1 },
-  { day: "Mardi",    time: "12h00–14h00 · 19h00–23h30", dow: 2 },
-  { day: "Mercredi", time: "12h00–14h00 · 19h00–23h30", dow: 3 },
-  { day: "Jeudi",    time: "12h00–14h00 · 19h00–23h30", dow: 4 },
-  { day: "Vendredi", time: "19h00 – 23h30",             dow: 5 },
-  { day: "Samedi",   time: "12h00–14h00 · 19h00–23h30", dow: 6 },
-  { day: "Dimanche", time: "12h00–14h00 · 19h00–23h30", dow: 0 }
+  { day: "Lundi",    time: "18:00 – 23:40",             dow: 1 },
+  { day: "Mardi",    time: "18:00 – 23:40",             dow: 2 },
+  { day: "Mercredi", time: "18:00 – 23:40",             dow: 3 },
+  { day: "Jeudi",    time: "18:00 – 23:50",             dow: 4 },
+  { day: "Vendredi", time: "18:00 – 23:40",             dow: 5 },
+  { day: "Samedi",   time: "12:00–14:30 · 18:30–00:00", dow: 6 },
+  { day: "Dimanche", time: "12:00–14:30 · 18:30–00:00", dow: 0 }
 ];

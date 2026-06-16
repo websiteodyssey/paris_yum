@@ -30,7 +30,7 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: hidden; }
 body {
   font-family: var(--sans); color: var(--text); background: var(--paper);
   line-height: 1.7; font-weight: 400; -webkit-font-smoothing: antialiased; overflow-x: hidden;
@@ -82,7 +82,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; line-height: 1.1
 .nav__cta { background: var(--gold); color: #fff !important; padding: 10px 22px; border-radius: 2px; font-weight: 600; }
 .nav__cta:hover { background: var(--gold-deep); }
 
-.nav.scrolled { background: rgba(255,255,255,.97); backdrop-filter: blur(10px); box-shadow: 0 1px 0 var(--line); padding: 13px 0; }
+.nav.scrolled { background: #fff; box-shadow: 0 2px 16px -8px rgba(0,0,0,.2); padding: 13px 0; }
 .nav.scrolled .nav__brand { color: var(--ink); }
 .nav.scrolled .nav__name { color: var(--ink); }
 .nav.scrolled .nav__links a { color: var(--ink); }

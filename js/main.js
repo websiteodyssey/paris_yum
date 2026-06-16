@@ -55,6 +55,8 @@
       navLinks.classList.toggle("open", open);
       burger.classList.toggle("open", open);
       burger.setAttribute("aria-expanded", String(open));
+      // verrouille le défilement de la page quand le menu mobile est ouvert
+      document.body.style.overflow = open ? "hidden" : "";
     };
     burger.addEventListener("click", () => toggleMenu());
     $$("a", navLinks).forEach(a => a.addEventListener("click", () => toggleMenu(false)));

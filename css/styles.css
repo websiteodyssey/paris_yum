@@ -178,12 +178,22 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; line-height: 1.1
 .tag--spicy { background: rgba(142,36,32,.1); color: var(--red); }
 .tag--star  { background: rgba(176,141,80,.16); color: var(--gold-deep); }
 
-.menu__tabs { display: flex; flex-wrap: wrap; gap: 9px; justify-content: center; margin-bottom: 48px; }
+.menu__tabs {
+  display: flex; flex-wrap: nowrap; gap: 9px; margin: 0 auto 44px;
+  width: fit-content; max-width: 100%;
+  overflow-x: auto; overflow-y: hidden;
+  padding: 4px 2px 14px; scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--gold) transparent;
+}
+.menu__tabs::-webkit-scrollbar { height: 6px; }
+.menu__tabs::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 100px; }
+.menu__tabs::-webkit-scrollbar-track { background: transparent; }
 .menu__tab {
   font-family: var(--sans); font-weight: 600; font-size: .76rem; letter-spacing: .06em; text-transform: uppercase;
   padding: 10px 18px; border-radius: 100px; border: 1px solid var(--line);
   background: var(--paper); color: var(--muted); cursor: pointer; transition: var(--ease);
   display: inline-flex; align-items: center; gap: 7px; white-space: nowrap;
+  flex: 0 0 auto; scroll-snap-align: center;
 }
 .menu__tab .zh { font-family: var(--zh); color: var(--gold-deep); font-weight: 600; }
 .menu__tab:hover { border-color: var(--gold); color: var(--ink); }
@@ -325,6 +335,11 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; line-height: 1.1
   .histoire__grid, .reserve__grid, .contact__grid { grid-template-columns: 1fr; }
   .histoire__media { max-width: 440px; margin-inline: auto; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
+  /* À propos centré comme les autres sections sur mobile */
+  .histoire__text { text-align: center; }
+  .histoire__text .eyebrow { display: block; }
+  .amenities { max-width: 420px; margin-inline: auto; }
+  .amenities li { justify-content: center; }
 }
 @media (max-width: 680px) {
   .nav__links {

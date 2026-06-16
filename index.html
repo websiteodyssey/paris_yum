@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paris Yum 三羊开泰 — Restaurant Asiatique & Chinois · Paris 9ᵉ</title>
+  <meta name="description" content="Paris Yum 三羊开泰 — restaurant asiatique et chinois au 21 rue Bleue, Paris 9ᵉ. Barbecue, fruits de mer, spécialités, dans une ambiance chaleureuse. Karaoké, WiFi, événements privés." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏮</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#accueil" class="nav__brand">
+        <span class="nav__zh">三羊开泰</span>
+        <span class="nav__name">Paris&nbsp;Yum</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#accueil">Accueil</a>
+        <a href="#carte">La carte</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Infos &amp; accès</a>
+        <a class="nav__cta is-disabled" role="button" aria-disabled="true" title="Réservation bientôt disponible">Réserver</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="accueil">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__kicker">Restaurant asiatique &amp; chinois · Paris 9ᵉ</p>
+      <h1 class="hero__title">Paris&nbsp;Yum<span class="hero__zh">三羊开泰</span></h1>
+      <p class="hero__tagline">Barbecue, fruits de mer et grandes spécialités chinoises, dans une ambiance chaleureuse au cœur de Paris.</p>
+      <div class="hero__actions">
+        <a href="#carte" class="btn btn--gold">Voir la carte</a>
+        <a class="btn btn--ghost is-disabled" role="button" aria-disabled="true" title="Réservation bientôt disponible">Réserver une table</a>
+      </div>
+      <div class="hero__meta">
+        <span>📍 21 rue Bleue, 75009 Paris</span>
+        <span>📞 01 48 00 01 68</span>
+        <span>🕑 Ouvert 7j/7</span>
+      </div>
+    </div>
+    <a href="#specialites" class="hero__scroll" aria-label="Défiler">↓</a>
+  </section>
+
+  <!-- ===== NOS PLATS (slider d'images) ===== -->
+  <section class="plats section" id="specialites">
+    <div class="section__head">
+      <p class="eyebrow">三羊开泰</p>
+      <h2>Nos Plats</h2>
+      <p class="section__sub">Découvrez nos spécialités, où chaque plat raconte une histoire de générosité et de partage.</p>
+    </div>
+    <div class="filmstrip" id="platsStrip">
+      <div class="filmstrip__track" id="platsTrack"></div>
+    </div>
+  </section>
+
+  <!-- ===== LA CARTE ===== -->
+  <section class="menu section" id="carte">
+    <div class="section__head">
+      <p class="eyebrow">三羊开泰</p>
+      <h2>La carte</h2>
+      <p class="section__sub">Prix en euros, taxes comprises. <span class="legend"><span class="tag tag--spicy">🌶️ épicé</span> <span class="tag tag--star">★ populaire</span></span></p>
+    </div>
+    <div class="menu__tabs" id="menuTabs"></div>
+    <div class="menu__panels" id="menuPanels"></div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section class="histoire section" id="apropos">
+    <div class="histoire__grid">
+      <div class="histoire__media">
+        <img src="images/bar.jpg" alt="Le bar de Paris Yum et sa statue 三羊开泰" loading="lazy" />
+        <div class="histoire__stamp">三<br>羊<br>开<br>泰</div>
+      </div>
+      <div class="histoire__text">
+        <p class="eyebrow">À propos</p>
+        <h2>Une table chaleureuse,<br>des saveurs sans compromis</h2>
+        <p>Chez <strong>Paris Yum</strong>, on partage une cuisine asiatique et chinoise généreuse et parfumée, dans une salle climatisée et conviviale. Notre nom, <em>三羊开泰</em>, est un vœu de prospérité et de renouveau — l'esprit que nous mettons dans chaque plat.</p>
+        <p>Brochettes grillées minute, fruits de mer, poissons et grandes spécialités du nord&nbsp;: une cuisine à partager entre amis ou en famille. Et pour faire la fête, place au <strong>karaoké</strong> et aux <strong>événements privés</strong>&nbsp;!</p>
+        <ul class="amenities">
+          <li><span>🔥</span> Barbecue grillé minute</li>
+          <li><span>🎤</span> Soirées karaoké</li>
+          <li><span>❄️</span> Salle climatisée</li>
+          <li><span>📶</span> WiFi gratuit</li>
+          <li><span>🎉</span> Événements privés</li>
+          <li><span>🐾</span> Animaux acceptés</li>
+          <li><span>🥡</span> À emporter</li>
+          <li><span>🛵</span> Livraison</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INFOS & ACCÈS ===== -->
+  <section class="contact section" id="contact">
+    <div class="section__head">
+      <p class="eyebrow">Infos &amp; accès</p>
+      <h2>Nous trouver</h2>
+    </div>
+    <div class="contact__grid">
+      <div class="contact__card">
+        <h3>Horaires d'ouverture</h3>
+        <ul class="hours" id="hoursList"></ul>
+        <p class="contact__badge">Ouvert 7&nbsp;jours&nbsp;/&nbsp;7</p>
+      </div>
+      <div class="contact__card">
+        <h3>Coordonnées</h3>
+        <ul class="contact__list">
+          <li><span>📍</span><div>21 rue Bleue<br>75009 Paris</div></li>
+          <li><span>📞</span><div><a href="tel:+33148000168">01 48 00 01 68</a></div></li>
+          <li><span>✉️</span><div><a href="mailto:parisyum75009@gmail.com">parisyum75009@gmail.com</a></div></li>
+          <li><span>🚇</span><div>Métro Cadet (L7) · Grands Boulevards (L8/9)</div></li>
+          <li><span>💳</span><div>CB · Sans contact · Apple Pay · Ticket Restaurant · Espèces</div></li>
+        </ul>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=21+Rue+Bleue+75009+Paris" target="_blank" rel="noopener" class="btn btn--dark btn--full">Itinéraire Google Maps</a>
+      </div>
+      <div class="contact__map">
+        <iframe
+          title="Carte Paris Yum"
+          src="https://maps.google.com/maps?q=21%20Rue%20Bleue%2075009%20Paris&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__zh">三羊开泰</span>
+        <span class="footer__name">Paris Yum</span>
+        <p>Restaurant asiatique &amp; chinois · Paris 9ᵉ</p>
+      </div>
+      <div class="footer__col">
+        <h4>Le restaurant</h4>
+        <a href="#apropos">À propos</a>
+        <a href="#carte">La carte</a>
+        <span class="is-disabled" title="Réservation bientôt disponible">Réserver</span>
+        <a href="#contact">Infos &amp; accès</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="tel:+33148000168">01 48 00 01 68</a>
+        <a href="mailto:parisyum75009@gmail.com">parisyum75009@gmail.com</a>
+        <a href="https://maps.google.com/maps?q=21+Rue+Bleue+75009+Paris" target="_blank" rel="noopener">21 rue Bleue, 75009 Paris</a>
+        <span>Ouvert 7j/7</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> Paris Yum 三羊开泰 — Tous droits réservés.</span>
+      <span class="footer__credit">L'abus d'alcool est dangereux pour la santé.</span>
+    </div>
+  </footer>
+
+  <a class="floating-cta is-disabled" role="button" aria-disabled="true" title="Réservation bientôt disponible">Réserver</a>
+
+  <script src="js/menu-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

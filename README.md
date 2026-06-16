@@ -16,7 +16,7 @@ Responsive (menu burger mobile), barre de navigation qui suit la section visible
 
 ## Infos du restaurant (source : paris-yum.eatbu.com)
 
-- **Adresse** : 21 rue Bleue, 75009 Paris
+- **Adresse** : 44 rue de Trévise, 75009 Paris
 - **Téléphone** : 01 48 00 01 68 · **E-mail** : parisyum75009@gmail.com
 - **Horaires** : Lun-Mer & Ven 18:00–23:40 · Jeu 18:00–23:50 · Sam-Dim 12:00–14:30 & 18:30–00:00
 - **Paiement** : CB, sans contact, Apple Pay, Ticket Restaurant, espèces
